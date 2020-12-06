@@ -11,14 +11,14 @@ class Employee():
 		return full_profile.title()
 
 	def give_raise(self):
-		if self.annual_salary < 3000:
+		if self.annual_salary < 30000:
 			raised_salary = self.annual_salary + 5000
 		else:
 			raised_salary = self.annual_salary + 3000
 		return raised_salary
 
 
-star_employee = Employee('younggi', 'seo', 2800)
+star_employee = Employee('younggi', 'seo', 28000)
 senior_employee = Employee('Luke', 'Konrath', 5500)
 
 print("- The evaluated employees list: \n 1. " + star_employee.show_profile() +
